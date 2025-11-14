@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="titulos">
+            <h1 class="titulo">Ficha personal</h1>
+            <p class="subtitulo">Perfil del Estudiante</p>
+        </div>
+        <button id="toggle-dark-mode" class="boton modo-toggle">Cambiar a modo oscuro</button>
+    </header>
+    <main>
+        <div class="navegacion-contenedor">
+            <div class="contenedor-imagen">
+                <img src="/imagen/imagen-foto.JPG" alt="Imagen de perfil">
+            </div>
+            <div class="nombre-y-navegacion">
+                <h2 class="nombre">Leandro Ezequiel Rial</h2>
+                <div class="navegacion-caja">
+                    <nav class="navegacion">
+                        <ul>
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="https://github.com/Leandro-Ezequiel-Rial/look-local-comercial-viernes" target="_blank">Local Comercial</a></li>
+                            <li><a href="https://github.com/Leandro-Ezequiel-Rial/actividad-fanpage-viernes" target="_blank">Fan Page</a></li>
+                            <li><a href="/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="formulario-contenedor">
+            <h3 class="formulario-titulo">Contacto</h3>
+            <form class="formulario-contacto">
+                <div class="nombre-y-email">
+                    <div class="input-contenedor">
+                        <label for="nombre" class="label">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" class="input" placeholder="Ingrese su nombre completo">
+                        <span class="error-message" id="error-nombre"></span>
+                    </div>
+                    <div class="input-contenedor">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="Ingrese su email">
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+                </div>
+                <div class="input-contenedor">
+                    <label for="comentarios" class="label">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" class="textarea" placeholder="Ingrese su comentario"></textarea>
+                    <span class="error-message" id="error-comentarios"></span>
+                </div>
+                <div class="boton-contenedor">
+                    <button type="submit" class="enviar-boton">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-texto">&copy; 2025 Todos los derechos reservados</p>
+        <button class="github-boton">Ver en Github</button>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

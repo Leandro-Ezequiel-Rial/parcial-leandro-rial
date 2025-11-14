@@ -1,0 +1,192 @@
+.formulario-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.formulario-titulo {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .formulario-titulo {
+    color: #ffffff;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+
+.nombre-y-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 18px;
+    display: block;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #23a9ec;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .label {
+    color: #0d5a7a;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8f8f8f;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.input.error {
+    border-color: #ff0000;
+}
+
+body.dark-mode .input {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+body.dark-mode .input.error {
+    border-color: #ff4444;
+}
+
+.textarea {
+    min-height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8f8f8f;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.textarea.error {
+    border-color: #ff0000;
+}
+
+body.dark-mode .textarea {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+body.dark-mode .textarea.error {
+    border-color: #ff4444;
+}
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.enviar-boton {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: #23a9ec;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enviar-boton:hover {
+    transform: scale(1.05);
+    background-color: #1e8fc7;
+}
+
+body.dark-mode .enviar-boton {
+    background-color: #0d5a7a;
+}
+
+body.dark-mode .enviar-boton:hover {
+    background-color: #0f6b8f;
+}
+
+@media (max-width: 768px) {
+    .formulario-contenedor {
+        margin-top: 30px;
+    }
+
+    .formulario-titulo {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .formulario-contacto {
+        gap: 15px;
+    }
+
+    .nombre-y-email {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-contenedor {
+        width: 100%;
+    }
+
+    .label {
+        font-size: 11px;
+    }
+
+    .input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .textarea {
+        min-height: 100px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .boton-contenedor {
+        margin-top: 15px;
+    }
+
+    .enviar-boton {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nombre-y-email {
+        gap: 15px;
+    }
+
+    .formulario-contacto {
+        gap: 18px;
+    }
+}
